@@ -1,0 +1,157 @@
+Loading Data...
+--- Parametric Extraction Results ---
+Input Signal (CH1) : 0.200 Vpp  | DC Offset: -0.000 V
+Output Signal (CH2): 7.400 Vpp  | DC Offset: -0.096 V
+System Voltage Gain: 37.00 V/V (31.36 dB)
+
+--- Transfer Function Estimation (H(s)) ---
+Calculated Transfer Function:
+  idtf with properties:
+
+        Numerator: -7.8564e+06
+      Denominator: [1 6.1882e+05]
+         Variable: 's'
+          IODelay: 0
+        Structure: [1×1 pmodel.tf]
+    NoiseVariance: 4.7683e-05
+       InputDelay: 0
+      OutputDelay: 0
+        InputName: {'u1'}
+        InputUnit: {''}
+       InputGroup: [1×1 struct]
+       OutputName: {'y1'}
+       OutputUnit: {''}
+      OutputGroup: [1×1 struct]
+            Notes: [0×1 string]
+         UserData: []
+             Name: ''
+               Ts: 0
+         TimeUnit: 'seconds'
+     SamplingGrid: [1×1 struct]
+           Report: [1×1 idresults.tfest]
+
+>> ic_tester1
+Initializing DSP & System ID Pipeline...
+
+--- 1. Parametric Extraction Results ---
+Voltage Gain: 37.00 V/V
+DC Operating Point (Output): -0.096 V
+
+--- 2. Mathematical Transfer Functions H(s) ---
+Empirical H(s) [From 1kHHz Data]:
+  idtf with properties:
+
+        Numerator: -7.8564e+06
+      Denominator: [1 6.1882e+05]
+         Variable: 's'
+          IODelay: 0
+        Structure: [1×1 pmodel.tf]
+    NoiseVariance: 4.7683e-05
+       InputDelay: 0
+      OutputDelay: 0
+        InputName: {'u1'}
+        InputUnit: {''}
+       InputGroup: [1×1 struct]
+       OutputName: {'y1'}
+       OutputUnit: {''}
+      OutputGroup: [1×1 struct]
+            Notes: [0×1 string]
+         UserData: []
+             Name: ''
+               Ts: 0
+         TimeUnit: 'seconds'
+     SamplingGrid: [1×1 struct]
+           Report: [1×1 idresults.tfest]
+
+Ideal Theoretical H(s):
+  tf with properties:
+
+       Numerator: {[0 5.1610e+05]}
+     Denominator: {[1 6.2832e+03]}
+        Variable: 's'
+         IODelay: 0
+      InputDelay: 0
+     OutputDelay: 0
+       InputName: {''}
+       InputUnit: {''}
+      InputGroup: [1×1 struct]
+      OutputName: {''}
+      OutputUnit: {''}
+     OutputGroup: [1×1 struct]
+           Notes: [0×1 string]
+        UserData: []
+            Name: ''
+              Ts: 0
+        TimeUnit: 'seconds'
+    SamplingGrid: [1×1 struct]
+
+
+--- 3. Magnitude & Phase Equations ---
+Empirical Magnitude |H(jw)|: -12.70 / sqrt(1 + (f / 98487.63)^2)
+Empirical Phase arg(H(jw)) : -atan(f / 98487.63) [radians]
+
+Ideal Magnitude |H(jw)|    : 82.14 / sqrt(1 + (f / 1000.00)^2)
+Ideal Phase arg(H(jw))     : -atan(f / 1000.00) [radians]
+
+>> ic_tester1
+Initializing DSP & System ID Pipeline...
+
+--- 1. Parametric Extraction Results ---
+Voltage Gain: 37.00 V/V
+DC Operating Point (Output): -0.096 V
+
+--- 2. Mathematical Transfer Functions H(s) ---
+Empirical H(s) [From 1kHHz Data]:
+  idtf with properties:
+
+        Numerator: -7.8564e+06
+      Denominator: [1 6.1882e+05]
+         Variable: 's'
+          IODelay: 0
+        Structure: [1×1 pmodel.tf]
+    NoiseVariance: 4.7683e-05
+       InputDelay: 0
+      OutputDelay: 0
+        InputName: {'u1'}
+        InputUnit: {''}
+       InputGroup: [1×1 struct]
+       OutputName: {'y1'}
+       OutputUnit: {''}
+      OutputGroup: [1×1 struct]
+            Notes: [0×1 string]
+         UserData: []
+             Name: ''
+               Ts: 0
+         TimeUnit: 'seconds'
+     SamplingGrid: [1×1 struct]
+           Report: [1×1 idresults.tfest]
+
+Ideal Theoretical H(s):
+  tf with properties:
+
+       Numerator: {[0 5.1610e+05]}
+     Denominator: {[1 6.2832e+03]}
+        Variable: 's'
+         IODelay: 0
+      InputDelay: 0
+     OutputDelay: 0
+       InputName: {''}
+       InputUnit: {''}
+      InputGroup: [1×1 struct]
+      OutputName: {''}
+      OutputUnit: {''}
+     OutputGroup: [1×1 struct]
+           Notes: [0×1 string]
+        UserData: []
+            Name: ''
+              Ts: 0
+        TimeUnit: 'seconds'
+    SamplingGrid: [1×1 struct]
+
+
+--- 3. Magnitude & Phase Equations ---
+Empirical Magnitude |H(jw)|: -12.70 / sqrt(1 + (f / 98487.63)^2)
+Empirical Phase arg(H(jw)) : -atan(f / 98487.63) [radians]
+
+Ideal Magnitude |H(jw)|    : 82.14 / sqrt(1 + (f / 1000.00)^2)
+Ideal Phase arg(H(jw))     : -atan(f / 1000.00) [radians]
