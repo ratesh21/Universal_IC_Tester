@@ -56,7 +56,8 @@ Fs = 1 / Ts;       % Sampling Frequency
 L = length(t);     % Length of the signal
 
 % Compute the Fast Fourier Transform of the Output Signal
-Y = fft(v_out);
+v_out_ac = v_out - dc_offset_out;
+Y = fft(v_out_ac);
 P2 = abs(Y / L);                  % Two-sided spectrum
 P1 = P2(1:floor(L/2)+1);          % Single-sided spectrum
 P1(2:end-1) = 2 * P1(2:end-1);    % Double the amplitude for folded frequencies
